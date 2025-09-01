@@ -1,0 +1,167 @@
+/* Transitions douces */
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Layout header */
+header .actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .actions button {
+  padding: 8px 12px;
+  border: 1px solid #444;
+  background: #fff;
+  color: #222;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+header .actions button:hover {
+  opacity: 0.85;
+}
+
+/* Nav */
+.nav {
+  margin-top: 15px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* Bouton menu (mobile) */
+.menu-toggle {
+  display: none; /* caché sur desktop */
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  /* Sur mobile: cacher le menu par défaut */
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #333;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  /* Quand ouvert */
+  .nav.open {
+    display: flex;
+  }
+  /* Bouton burger visible sur mobile */
+  .menu-toggle {
+    display: inline-block;
+  }
+}
+
+/* --- Mode sombre --- */
+body.dark {
+  background: #121212;
+  color: #eaeaea;
+}
+
+body.dark header {
+  background: #111;
+}
+
+body.dark footer {
+  background: #111;
+  color: #eaeaea;
+}
+
+body.dark .card {
+  background: #1d1d1d;
+  border-color: #2a2a2a;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+}
+
+body.dark .actions button {
+  background: #1d1d1d;
+  color: #eaeaea;
+  border-color: #555;
+}
+
+body.dark .nav a {
+  color: #eaeaea;
+}
+/* --- Style général --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* --- En-tête --- */
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* --- Sections --- */
+section {
+  padding: 40px;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* --- Projets --- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Pied de page --- */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit:cover;
+}

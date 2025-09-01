@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faneva portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   
+    <header>
+      <h1>Hi, I'm Faneva Ranaivoharison</h1>
+  
+      <!-- Vérifie que l'image est bien dans le dossier Image/ -->
+      <img src="PDP.jpg" class="profile-pic" alt="Profile Picture">
+  
+      <p>Future software engineer</p>
+  
+      <!-- Boutons -->
+      <div class="actions">
+        <button id="themeToggle" aria-pressed="false">🌙 Dark</button>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav">☰ Menu</button>
+      </div>
+  
+      <!-- Menu -->
+      <nav id="siteNav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    
+    <section id="about">
+      <h2>About myself </h2>
+      <p>
+        My name is Faneva Ranaivoharison, I'm first year of university student. I love technology and videos games.<br>
+        My dream is to become software engineer and I do my best to achieve it, and I also create interactive projects for the Pageweb.
+      </p>
+    </section>
+    
+    <section id="projects">
+      <h2>My projects:</h2>
+      <div class="projects">
+        <div class="card">Project 1: simple personal webpage</div>
+        <div class="card">Project 2: Game-inspired Landing Page</div>
+      </div>
+    </section>
+  
+    <section id="skills">
+      <h2>Skills:</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript (beginner)</li>
+        <li>Basic design</li>
+      </ul>
+    </section>
+     
+    <section id="contact">
+      <h2>Contact:</h2>
+      <p>Email: <a href="mailto:rijafanevaran@gmail.com">rijafanevaran@gmail.com</a></p>
+    </section>
+     
+    <footer>
+      <p>© 2025 Faneva Ran. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Ajout du defer pour s'assurer que le JS se charge après le HTML -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

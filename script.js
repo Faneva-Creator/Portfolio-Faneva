@@ -1,3 +1,4 @@
+alert("JS is working!");
 // --- Sélecteurs
 const themeBtn = document.getElementById('themeToggle');
 const menuBtn = document.getElementById('menuToggle');

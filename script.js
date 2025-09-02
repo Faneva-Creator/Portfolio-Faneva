@@ -1,10 +1,9 @@
-alert("JS is working!");
 // --- Sélecteurs
 const themeBtn = document.getElementById('themeToggle');
 const menuBtn = document.getElementById('menuToggle');
 const nav = document.getElementById('siteNav');
 
-// --- Vérifier que les boutons existent
+// --- Vérifiquation des boutons existent
 if (themeBtn && menuBtn && nav) {
   
   // --- Thème: appliquer le thème sauvegardé (si présent)
